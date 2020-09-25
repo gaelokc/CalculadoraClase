@@ -9,6 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController, CalculadoraProtocol{
+    
+   
+    @IBOutlet weak var display: UILabel!
+    
+    @IBOutlet weak var BotonSuma: UIButton!
+    @IBOutlet weak var BotonResta: UIButton!
+    @IBOutlet weak var BotonDiv: UIButton!
+    @IBOutlet weak var BotonMul: UIButton!
+    @IBOutlet weak var BotonMod: UIButton!
+    
+    @IBOutlet weak var BotonCE: UIButton!
+    @IBOutlet weak var BotonC: UIButton!
+    
+    @IBAction func nuevoNum (sender: UIButton){
+        
+        switch sender.accessibilityIdentifier {
+        case "numero0":
+            display.text = nuevoNum(sender: <#T##UIButton#>)
+        default:
+            <#code#>
+        }
+    }
+    
     func suma(num1: Int, num2: Int) -> Int {
         let resultadoSuma = num1+num2
         return resultadoSuma
@@ -39,7 +62,6 @@ class ViewController: UIViewController, CalculadoraProtocol{
         // Do any additional setup after loading the view.
     }
 
-
 }
 
 protocol CalculadoraProtocol {
@@ -50,3 +72,5 @@ protocol CalculadoraProtocol {
     func multiplicacion (num1: Int, num2: Int) -> Int
     func modulo (num1: Int, num2: Int) -> Int
 }
+
+
