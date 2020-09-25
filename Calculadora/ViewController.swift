@@ -26,7 +26,36 @@ class ViewController: UIViewController, CalculadoraProtocol{
         
         switch sender.accessibilityIdentifier {
         case "numero0":
-            display.text = nuevoNum(sender: <#T##UIButton#>)
+            display.text = "0"
+            break
+        case "numero1":
+            display.text = "0"
+        case "numero2":
+            display.text = "0"
+            break
+        case "numero3":
+            display.text = "0"
+            break
+        case "numero4":
+            display.text = "0"
+            break
+        case "numero5":
+            display.text = "0"
+            break
+        case "numero6":
+            display.text = "0"
+            break
+        case "numero7":
+            display.text = "0"
+            break
+        case "numero8":
+            display.text = "0"
+            break
+        case "numero9":
+            display.text = "0"
+            break
+            
+       
         default:
             <#code#>
         }
